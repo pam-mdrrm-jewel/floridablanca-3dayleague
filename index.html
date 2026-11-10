@@ -22,33 +22,33 @@ input{width:100%;padding:6px;border:1px solid #aaa;border-radius:5px;font-size:1
 button{padding:10px 18px;border:0;border-radius:6px;background:var(--ind);color:#fff;font-weight:bold;cursor:pointer;font-size:14px}
 button.g{background:#222}
 #info{font-size:13px;margin-top:8px}
-#sheet{display:grid;grid-template-columns:200mm;justify-content:center;margin:10px auto}
+#sheet{display:grid;grid-template-columns:repeat(3,66.6mm);justify-content:center;margin:10px auto}
 /* ticket */
-.t{--g:linear-gradient(#1400ff,#061d83);width:200mm;height:57mm;display:flex;break-inside:avoid;page-break-inside:avoid;border:.3mm dashed #666;overflow:hidden;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.t{--g:linear-gradient(#1400ff,#061d83);width:66.6mm;height:57mm;display:flex;flex-direction:column;break-inside:avoid;page-break-inside:avoid;border:.3mm dashed #666;overflow:hidden;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .t.d2{--g:linear-gradient(#ff2a2a,#8a0000)}.t.d3{--g:linear-gradient(#00d9ff,#008fff)}
 .main,.stub{position:relative;background:linear-gradient(135deg,#fff 0 30%,#eaf7ff 30% 36%,#fff 36% 60%,#dff3ff 60% 66%,#fff 66%)}
-.main{flex:1;padding:1.5mm 4mm 0;display:flex;flex-direction:column;min-width:0}
-.bld,.stub .bld{position:absolute;left:0;right:0;bottom:0;height:75%;background:var(--bld) center bottom/cover no-repeat;opacity:.55;z-index:0}
+.main{flex:1;padding:1.2mm 2.5mm 0;display:flex;flex-direction:column;min-width:0}
+.bld{position:absolute;left:0;right:0;bottom:0;height:80%;background:var(--bld) center bottom/cover no-repeat;opacity:.55;z-index:0}
 .main>*,.stub>*{position:relative;z-index:1}
-.logos{display:flex;gap:2.5mm;align-items:center;justify-content:center;height:10mm}
-.logos img{height:9.5mm;width:auto;object-fit:contain}
-.ttl{font-family:var(--fa);text-align:center;font-size:10.5mm;line-height:1;letter-spacing:.3mm;color:#fff;-webkit-text-stroke:.9mm var(--navy);paint-order:stroke fill;text-shadow:.7mm .7mm 0 var(--cy);margin-top:.5mm}
-.sub{font-family:var(--fa);text-align:center;font-size:4.8mm;letter-spacing:.4mm;color:var(--navy);margin:.4mm 0}
-.bar{background:linear-gradient(#333,#000);color:#fff;font-weight:800;text-align:center;font-size:3.4mm;padding:1mm 2mm;border-radius:1.5mm;box-shadow:0 .5mm 1mm #0006}
-.note{font-style:italic;font-weight:700;font-size:2.1mm;text-align:center;margin:.5mm 0}
-.band{display:flex;align-items:center;background:var(--g);border-radius:1.5mm;height:10mm;box-shadow:0 .5mm 1mm #0005;margin-bottom:1mm}
-.band .s{flex:1;font-family:var(--fa);color:#fff;text-align:center;font-size:5.4mm;line-height:1.05;letter-spacing:.3mm;text-shadow:0 .3mm .6mm #0006}
-.box2{font-family:var(--fa);background:linear-gradient(#333,#000);color:#fff;border:.6mm solid #fff;border-radius:1.5mm;padding:.6mm 4mm;font-size:7mm;line-height:1.1;box-shadow:0 0 0 .3mm #000}
-.foot{margin:auto -4mm 0;height:5mm;background:linear-gradient(90deg,var(--sky),var(--bl) 40%,var(--ind));color:#fff;font-weight:800;font-size:2.6mm;display:flex;align-items:center;padding-left:4mm;position:relative}
-.foot:after{content:"";position:absolute;right:0;top:0;bottom:0;width:30mm;background:repeating-linear-gradient(115deg,transparent 0 2mm,rgba(255,255,255,.9) 2mm 3.6mm)}
-.live{background:#c00;border-radius:.8mm;padding:.2mm 1.2mm;margin-right:1.5mm}
-.stub{width:40mm;border-left:.4mm dashed #444;padding:2mm;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center}
-.stub .a{font-family:var(--fa);font-size:5mm;line-height:1;color:#fff;-webkit-text-stroke:.6mm var(--navy);paint-order:stroke fill;text-shadow:.4mm .4mm 0 var(--cy)}
-.stub .box2{font-size:8mm;padding:.5mm 3mm}
-.stub .dt{background:var(--g);color:#fff;font-weight:800;font-size:3.4mm;padding:1.2mm 3mm;border-radius:1.5mm;width:100%}
-.stub .sn{font-family:var(--fa);font-size:6mm;color:var(--navy)}
-.stub .e{font-size:2.6mm;font-weight:800;color:var(--navy)}
-.r{display:grid;grid-template-columns:1.3fr 1.6fr 1fr auto;gap:8px;padding:8px;border-radius:8px;margin-bottom:6px;color:#fff;align-items:end}
+.logos{display:flex;gap:1.5mm;align-items:center;justify-content:center;height:9.5mm}
+.logos img{height:9mm;width:auto;object-fit:contain}
+.ttl{font-family:var(--fa);text-align:center;font-size:5mm;line-height:1;letter-spacing:.1mm;white-space:nowrap;color:#fff;-webkit-text-stroke:.45mm var(--navy);paint-order:stroke fill;text-shadow:.3mm .3mm 0 var(--cy);margin-top:.3mm}
+.sub{font-family:var(--fa);text-align:center;font-size:2.7mm;letter-spacing:.2mm;color:var(--navy);margin:.5mm 0 .8mm}
+.bar{background:linear-gradient(#333,#000);color:#fff;font-weight:800;text-align:center;font-size:2.4mm;padding:.7mm 1mm;border-radius:1mm;box-shadow:0 .3mm .6mm #0006}
+.note{font-style:italic;font-weight:700;font-size:1.65mm;text-align:center;margin:.6mm 0 1mm;white-space:nowrap}
+.band{display:flex;align-items:center;background:var(--g);border-radius:1mm;height:9.5mm;box-shadow:0 .3mm .6mm #0005;padding:0 .8mm}
+.band .s{flex:1;font-family:var(--fa);color:#fff;text-align:center;line-height:1;text-shadow:0 .3mm .5mm #0006}
+.band .s small{display:block;font-size:2mm;letter-spacing:.15mm}
+.band .s b{display:block;font-weight:400;font-size:3.5mm;letter-spacing:.1mm;margin-top:.4mm;white-space:nowrap}
+.box2{font-family:var(--fa);background:linear-gradient(#333,#000);color:#fff;border:.45mm solid #fff;border-radius:1mm;padding:.4mm 1.8mm;font-size:4mm;line-height:1.1;box-shadow:0 0 0 .2mm #000;white-space:nowrap}
+.foot{margin:1.2mm -2.5mm 0;height:4mm;background:linear-gradient(90deg,var(--sky),var(--bl) 40%,var(--ind));color:#fff;font-weight:800;font-size:1.9mm;display:flex;align-items:center;padding-left:2.5mm;position:relative}
+.foot:after{content:"";position:absolute;right:0;top:0;bottom:0;width:14mm;background:repeating-linear-gradient(115deg,transparent 0 1.2mm,rgba(255,255,255,.9) 1.2mm 2.1mm)}
+.stub{height:11.5mm;border-top:.4mm dashed #444;padding:0 2mm;display:flex;align-items:center;justify-content:space-between;gap:1mm;text-align:center}
+.stub .box2{font-size:3.4mm;padding:.3mm 1.4mm}
+.stub .dt{background:var(--g);color:#fff;font-weight:800;font-size:2.2mm;padding:.8mm 1.2mm;border-radius:1mm;white-space:nowrap}
+.stub .sn{font-family:var(--fa);font-size:3.6mm;color:var(--navy);white-space:nowrap}
+.stub .e{font-size:1.8mm;font-weight:800;color:var(--navy);line-height:1.2}
+.r{display:grid;grid-template-columns:1.4fr 1.2fr .9fr auto;gap:8px;padding:8px;border-radius:8px;margin-bottom:6px;color:#fff;align-items:end}
 .r.d1{background:linear-gradient(#1400ff,#061d83)}.r.d2{background:linear-gradient(#ff0000,#8a0000)}.r.d3{background:linear-gradient(#00d9ff,#008fff)}
 select{width:100%;padding:6px;border-radius:5px;border:1px solid #aaa;font-size:14px}.r input,.r select{color:#111}.r button{padding:7px 12px;background:#000a}
 @page{size:A4;margin:5mm}
@@ -56,11 +56,11 @@ select{width:100%;padding:6px;border-radius:5px;border:1px solid #aaa;font-size:
 </style></head><body>
 <div class="panel">
 <h1>ARANGKADA FLORIDABLANCA 3 DAY INVITATIONAL LEAGUE</h1>
-<p>Ticket stub generator. Each row = one batch: pick the day, type a ticket type (Bleacher, VIP, Courtside, anything), set the quantity. Numbers continue per day across rows.</p>
+<p>Ticket stub generator. Each row = one batch: pick the day, ticket type and quantity.</p>
 <div id="rows"></div>
-<datalist id="types"><option>BLEACHER</option><option>VIP</option><option>VVIP</option><option>COURTSIDE</option><option>GENERAL ADMISSION</option><option>PATRON</option><option>SPONSOR</option></datalist>
+
 <div class="opts"><button class="g" onclick="addRow()">+ Add row</button><div style="max-width:120px"><label>Year</label><input id="year" type="number" value="2026"></div>
-<button onclick="gen()">Generate</button><button class="g" onclick="window.print()">Print</button></div>
+<button onclick="gen()">Generate</button><button class="g" onclick="window.print()">Print</button><button id="dlb" style="background:#0a7d3b" onclick="dl()">Download PDF</button></div>
 <div id="info"></div></div>
 <div id="sheet"></div>
 <script>
@@ -69,30 +69,92 @@ document.documentElement.style.setProperty("--bld","url(data:image/webp;base64,U
 const DAYS={1:{d:4,w:"FRIDAY"},2:{d:5,w:"SATURDAY"},3:{d:6,w:"SUNDAY"}};
 const pad=n=>String(n).padStart(4,"0");
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function addRow(day,type,qty){
+function addRow(day,type,qty,st){
   day=day||1;const r=document.createElement("div");r.className="r d"+day;
   r.innerHTML=`<div><label>Day</label><select onchange="this.closest('.r').className='r d'+this.value"><option value="1">Day 1 · Dec 4 · Blue</option><option value="2">Day 2 · Dec 5 · Red</option><option value="3">Day 3 · Dec 6 · Cyan</option></select></div>
-<div><label>Ticket type</label><input class="ty" list="types" value="${type||""}" placeholder="e.g. VIP"></div>
-<div><label>Quantity</label><input class="qy" type="number" min="0" value="${qty==null?100:qty}"></div><button onclick="this.closest('.r').remove()">✕</button>`;
-  r.querySelector("select").value=day;document.getElementById("rows").appendChild(r);
+<div><label>Ticket type</label><select class="ty"><option>BLEACHER</option><option>COURTSIDE</option><option>VIP</option></select></div>
+<div><label>Quantity</label><input class="qy" type="number" min="0" value="${qty==null?100:qty}"></div>
+<button onclick="this.closest('.r').remove()">✕</button>`;
+  r.querySelector("select").value=day;r.querySelector(".ty").value=type||"BLEACHER";document.getElementById("rows").appendChild(r);
 }
 function gen(){
   const yr=document.getElementById("year").value||2026,cnt={1:0,2:0,3:0};let h="",tot=0;
   document.querySelectorAll("#rows .r").forEach(r=>{
-    const n=+r.querySelector("select").value,D=DAYS[n],q=Math.max(0,parseInt(r.querySelector(".qy").value)||0),ty=esc(r.querySelector(".ty").value.trim().toUpperCase());
+    const n=+r.querySelector("select").value,D=DAYS[n],q=Math.max(0,parseInt(r.querySelector(".qy").value)||0),ty=r.querySelector(".ty").value;
     for(let i=0;i<q;i++){const no="D"+n+"-"+pad(++cnt[n]);
     h+=`<div class="t d${n}"><div class="main"><div class="bld"></div>
 <div class="logos"><img src="${L.a}" alt=""><img src="${L.f}" alt=""><img src="${L.m}" alt=""></div>
 <div class="ttl">ARANGKADA FLORIDABLANCA</div><div class="sub">3 DAY INVITATIONAL LEAGUE</div>
-<div class="bar">DECEMBER ${D.d}, ${yr} • ${D.w} • Floridablanca Sports Center</div>
-<div class="note">Please come in time 15 minutes prior to the games. Non-transferable.</div>
-<div class="band"><div class="s">ADMIT ONE${ty?" • "+ty:""}</div><div class="box2">DAY ${n}</div><div class="s">No. ${no}</div></div>
+<div class="bar">DECEMBER ${D.d}, ${yr} • ${D.w}</div>
+<div class="note">Floridablanca Sports Center • Come 15 minutes before games</div>
+<div class="band"><div class="s"><small>ADMIT ONE</small><b>${ty}</b></div><div class="box2">DAY ${n}</div><div class="s"><small>ADMIT NO.</small><b>${no}</b></div></div>
 <div class="foot">THIS IS NOT FOR SALE</div></div>
-<div class="stub"><div class="bld"></div><div class="a">ARANGKADA<br>FLORIDABLANCA</div><div class="box2">DAY ${n}</div><div class="dt">DEC ${D.d}, ${yr}</div><div class="sn">${no}</div><div class="e">ADMIT ONE${ty?"<br>"+ty:""}</div></div></div>`}
+<div class="stub"><div class="box2">DAY ${n}</div><div class="dt">DEC ${D.d}</div><div class="sn">${no}</div><div class="e">ADMIT ONE<br>${ty}</div></div></div>`}
     tot+=q});
   if(tot>3000){document.getElementById("info").textContent="Max 3000 per generate. Lower the quantities.";return}
   document.getElementById("sheet").innerHTML=h;
-  document.getElementById("info").textContent=tot+" tickets ("+Math.ceil(tot/5)+" A4 pages, 5 per page, 0.5 cm margin). In print: margins Default, Background graphics ON, scale 100%.";
+  document.getElementById("info").textContent=tot+" tickets ("+Math.ceil(tot/15)+" A4 pages, 15 per page, 0.5 cm margin). In print: margins Default, Background graphics ON, scale 100%.";
+}
+
+let FONTCSS=null;
+async function fontCss(){
+  if(FONTCSS!==null)return FONTCSS;
+  try{
+    let c=await (await fetch(document.querySelector('link[href*="fonts.googleapis"]').href)).text();
+    c=c.split("/* ").filter(b=>b.startsWith("latin */")).map(b=>"/* "+b).join("\n");
+    for(const u of [...new Set([...c.matchAll(/url\((https:[^)]+)\)/g)].map(m=>m[1]))]){
+      const bl=await (await fetch(u)).blob();
+      const d=await new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(bl)});
+      c=c.split(u).join(d);
+    }
+    FONTCSS=c;
+  }catch(e){FONTCSS=""}
+  return FONTCSS;
+}
+function makePDF(jp){
+  const enc=new TextEncoder(),parts=[],off=[];let len=0;
+  const add=x=>{const b=typeof x==="string"?enc.encode(x):x;parts.push(b);len+=b.length};
+  const obj=(n,d,s)=>{off[n]=len;add(n+" 0 obj\n"+d+"\n");if(s){add("stream\n");add(s);add("\nendstream\n")}add("endobj\n")};
+  add("%PDF-1.4\n");const N=jp.length,kids=[];
+  obj(1,"<< /Type /Catalog /Pages 2 0 R >>");
+  jp.forEach((j,i)=>{const im=3+i*3,ct=im+1,pg=im+2,c="q 595.28 0 0 841.89 0 0 cm /I0 Do Q";kids.push(pg+" 0 R");
+    obj(im,`<< /Type /XObject /Subtype /Image /Width ${j.w} /Height ${j.h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${j.d.length} >>`,j.d);
+    obj(ct,`<< /Length ${c.length} >>`,enc.encode(c));
+    obj(pg,`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /XObject << /I0 ${im} 0 R >> >> /Contents ${ct} 0 R >>`)});
+  obj(2,`<< /Type /Pages /Kids [${kids.join(" ")}] /Count ${N} >>`);
+  const x=len,S=3+N*3;let t=`xref\n0 ${S}\n0000000000 65535 f \n`;
+  for(let n=1;n<S;n++)t+=String(off[n]).padStart(10,"0")+" 00000 n \n";
+  add(t+`trailer\n<< /Size ${S} /Root 1 0 R >>\nstartxref\n${x}\n%%EOF`);
+  return new Blob(parts,{type:"application/pdf"});
+}
+async function dl(){
+  const info=document.getElementById("info"),btn=document.getElementById("dlb");
+  gen();const T=[...document.querySelectorAll("#sheet .t")];
+  if(!T.length){info.textContent="Nothing to download. Add a row with a quantity first.";return}
+  btn.disabled=true;
+  try{
+    info.textContent="Preparing fonts...";
+    const fc=await fontCss(),bld=document.documentElement.style.getPropertyValue("--bld");
+    const css=":root{--bld:"+bld+"}"+document.querySelector("style").textContent.replace(/@media print\{[^}]*\{[^}]*\}[^}]*\}/,"")+fc+
+      ".pg{width:794px;height:1123px;padding:5mm;display:grid;grid-template-columns:repeat(3,66.6mm);grid-auto-rows:57mm;justify-content:center;align-content:start;background:#fff;box-sizing:border-box;font-family:var(--fg)}";
+    const SC=2.5,W=794,H=1123,pages=[],tot=Math.ceil(T.length/15);
+    for(let p=0;p<tot;p++){
+      info.textContent="Rendering page "+(p+1)+" of "+tot+"...";
+      const pg=document.createElement("div");pg.className="pg";
+      T.slice(p*15,p*15+15).forEach(t=>pg.appendChild(t.cloneNode(true)));
+      const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><foreignObject width="${W}" height="${H}"><div xmlns="http://www.w3.org/1999/xhtml"><style>${css}</style>${new XMLSerializer().serializeToString(pg)}</div></foreignObject></svg>`;
+      const url="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg);
+      const draw=()=>new Promise((ok,no)=>{const im=new Image();im.onload=()=>{const c=document.createElement("canvas");c.width=W*SC;c.height=H*SC;const x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,c.width,c.height);x.drawImage(im,0,0,c.width,c.height);ok(c)};im.onerror=no;im.src=url});
+      if(p===0)await draw();
+      const c=await draw();
+      const b=await new Promise(r=>c.toBlob(r,"image/jpeg",.92));
+      if(!b)throw new Error("render failed");
+      pages.push({d:new Uint8Array(await b.arrayBuffer()),w:c.width,h:c.height});
+    }
+    const a=document.createElement("a");a.href=URL.createObjectURL(makePDF(pages));a.download="arangkada-tickets.pdf";document.body.appendChild(a);a.click();a.remove();
+    info.textContent="Downloaded arangkada-tickets.pdf ("+tot+" pages).";
+  }catch(e){info.textContent="Download failed in this browser. Use Google Chrome or Edge, or use Print and choose Save as PDF.";console.error(e)}
+  btn.disabled=false;
 }
 addRow(1,"BLEACHER",500);addRow(2,"BLEACHER",500);addRow(3,"BLEACHER",500);
 gen();
